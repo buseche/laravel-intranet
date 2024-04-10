@@ -5,7 +5,7 @@
 	<div class="card">
 
 	  <div class="card-header">
-	    Modifier un client
+	    Modificar un cliente
 	  </div>
 
 	  <div class="card-body">
@@ -26,7 +26,7 @@
 				@method('PUT')
 		        
 		        <div class="form-group">
-		            <label for="name">Nom du client</label>
+		            <label for="name">Nombre del cliente</label>
 		            <input type="text" class="form-control" value="{{ $customer->name }}" name="name" required />
 		        </div>
 
@@ -34,7 +34,7 @@
 
 		          	<div class="col-md-6">
 				        <div class="form-group">
-				            <label for="phone">Téléphone</label>
+				            <label for="phone">Telefono</label>
 				            <input type="text" class="form-control" value="{{ $customer->phone }}" name="phone"/>
 				        </div>
 		          	</div>
@@ -52,7 +52,7 @@
 
 	          	
 		        <div class="form-group">
-		            <label for="street">Adresse</label>
+		            <label for="street">Direccion</label>
 		            <input type="text" class="form-control" value="{{ $customer->street }}" name="street"/>
 		        </div>
 	          	
@@ -61,21 +61,21 @@
 
 		          	<div class="col-md-4">
 				        <div class="form-group">
-				            <label for="zip_code">Code Postal</label>
+				            <label for="zip_code">Codigo Postal</label>
 				            <input type="text" class="form-control" value="{{ $customer->zip_code }}" name="zip_code"/>
 				        </div>
 		          	</div>
 
 		          	<div class="col-md-4">
 				        <div class="form-group">
-				            <label for="city">Ville</label>
+				            <label for="city">Ciudad</label>
 				            <input type="text" class="form-control" value="{{ $customer->city }}" name="city"/>
 				        </div>
 		          	</div>
 
 		          	<div class="col-md-4">
 				        <div class="form-group">
-				            <label for="state">Pays</label>
+				            <label for="state">Pais</label>
 				            <input type="text" class="form-control" value="{{ $customer->state }}" name="state"/>
 				        </div>
 		          	</div>
@@ -85,20 +85,20 @@
 	        	<hr>
 
 	        	<fieldset class="form-group">
-	        		<legend>Contact</legend>
+	        		<legend>Contacto</legend>
 	        		
 		        	<div class="row">
 
 			          	<div class="col-md-6">
 					        <div class="form-group">
-					            <label for="contact_first_name">Prénom</label>
+					            <label for="contact_first_name">Primer Nombre</label>
 					            <input type="text" class="form-control" value="{{ $customer->contact_first_name }}" name="contact_first_name"/>
 					        </div>
 			          	</div>
 
 			          	<div class="col-md-6">
 					        <div class="form-group">
-					            <label for="contact_last_name">Nom</label>
+					            <label for="contact_last_name">Apellido</label>
 					            <input type="text" class="form-control" value="{{ $customer->contact_last_name }}" name="contact_last_name"/>
 					        </div>
 			          	</div>
@@ -109,7 +109,7 @@
 
 			          	<div class="col-md-6">
 					        <div class="form-group">
-					            <label for="contact_phone">Téléphone</label>
+					            <label for="contact_phone">Telefono</label>
 					            <input type="text" class="form-control" value="{{ $customer->contact_phone }}" name="contact_phone"/>
 					        </div>
 			          	</div>
@@ -128,12 +128,12 @@
 	        	<hr>
 
 	          	<div class="form-group">
-	            	<label for="comment">Commentaires</label>
+	            	<label for="comment">Comentarios</label>
 	            	<textarea class="form-control" value="{{ $customer->comment }}" name="comment"></textarea>
 	          	</div>
 
 	          	<div class="form-group float-right">
-					<button type="submit" class="btn btn-primary">Enregistrer</button>
+					<button type="submit" class="btn btn-primary">Registrar</button>
 				</div>
 
 	      </form>

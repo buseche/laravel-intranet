@@ -13,7 +13,7 @@
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Clients</div>
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Clientes</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $customers_count }}</div>
                                 </div>
                                 <div class="col-auto">
@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Projets</div>
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Proyectos</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $projects_count }}</div>
                                 </div>
                                 <div class="col-auto">
@@ -53,7 +53,7 @@
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Tâches en cours</div>
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Tareas actuales</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $tasks_count }}</div>
                                 </div>
                                 <div class="col-auto">
@@ -72,7 +72,7 @@
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Budget total</div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Presupuesto total</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $budget_total }} €</div>
                             </div>
                             <div class="col-auto">
@@ -92,8 +92,8 @@
 
                 <div class="card mb-3">
                     <div class="card-header">
-                        <a href="/projects/billable" class="btn btn-info float-right"><i class="fas fa-link"></i> Projets à facturer</a>
-                        <h5>Suivi facturation</h5>
+                        <a href="/projects/billable" class="btn btn-info float-right"><i class="fas fa-link"></i> Proyectos a facturar</a>
+                        <h5>Seguimiento de facturación</h5>
                     </div>
                     <div class="card-body">
                         <invoices-graph :labels="{{ $stats['labels'] }}" :estimates="{{ $stats['estimates'] }}" :invoices="{{ $stats['invoices'] }}"></invoices-graph>
@@ -102,7 +102,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h5>Factures</h5>
+                        <h5>Facturas</h5>
                     </div>
                     <div class="card-body">
                         <list-doc :type="'invoice'"></list-doc>
